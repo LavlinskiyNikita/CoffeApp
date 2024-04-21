@@ -9,20 +9,15 @@
 
 
     <FrameLayout
-        android:id="@+id/frtame_layout"
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        tools:layout_editor_absoluteX="-16dp">
-    </FrameLayout>
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"></FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+        android:id="@+id/bottomNavigationView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/nav_bar" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

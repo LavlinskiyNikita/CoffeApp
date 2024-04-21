@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="45dp">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@color/orange" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="2000dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/price_product_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:padding="20dp"
+                    android:text="priceProduct"
+                    android:textSize="24dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="2000dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name_product_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:padding="20dp"
+                    android:text="nameProduc"
+                    android:textSize="24dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="2000dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/desc_product_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:padding="20dp"
+                    android:text="descriptionProduct"
+                    android:textSize="24dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="50dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/safe_btn_product_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:padding="30dp"
+                android:text="сохранить"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</layout>

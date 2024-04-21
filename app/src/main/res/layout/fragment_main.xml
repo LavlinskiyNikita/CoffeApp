@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="wrap_content"
@@ -12,10 +11,8 @@
         android:layout_height="wrap_content"/>
 
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
         <include
             android:id="@+id/include"
             layout="@layout/toolbar"
@@ -47,4 +44,12 @@
 
     </LinearLayout>
 
-</FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        app:menu="@menu/nav_bar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
